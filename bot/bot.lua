@@ -227,7 +227,7 @@ function match_plugin(plugin, plugin_name, msg)
       if is_plugin_disabled_on_chat(plugin_name, msg.chat_id_) then
         return nil
       end
-	       tdcli.sendChatAction(msg.chat_id_, 'Typing', 100, dl_cb, nil)
+	        tdcli.sendChatAction(msg.chat_id_, 'Typing', 100, dl_cb, nil)
 			print("Message matches: ", pattern..' | Plugin: '..plugin_name)
 			if plugin.run then
         if not warns_user_not_allowed(plugin, msg) then
