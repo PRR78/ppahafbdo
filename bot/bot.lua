@@ -240,6 +240,13 @@ function match_plugin(plugin, plugin_name, msg)
 	end
 end
 
+local function openChat(chat_id, cb)
+  tdcli_function ({
+    ID = "OpenChat",
+    chat_id_ = chat_id
+  }, cb or dl_cb, nil)
+end
+
 function file_cb(msg)
 	if msg.content_.ID == "MessagePhoto" then
 		photo_id = ''
