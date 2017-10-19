@@ -111,6 +111,9 @@ An advanced administration bot based on Beyond
 		
 》Our channel :
 》@TelePlus《
+		
+》Our website :
+》teleplusfa.ir
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
