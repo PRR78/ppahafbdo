@@ -94,7 +94,7 @@ local function ToOfan(msg, parts)
 	if is_mod(msg) then
 		local hash = "gp_lang:"..msg.to.id
 		local lang = redis:get(hash)
-		if parts[1]:lower() == 'unforce' then
+		if parts[1]:lower() == 'unlock' then
 			if parts[2]:lower() == 'add' then
 				local add = redis:hget('addmeminv' ,msg.to.id)
 				if not add then
@@ -116,7 +116,7 @@ local function ToOfan(msg, parts)
 				end
 			end
 		end
-		if parts[1]:lower() == 'force' then
+		if parts[1]:lower() == 'lock' then
 			if parts[2]:lower() == 'add' then
 				local add = redis:hget('addmeminv' ,msg.to.id)
 				if not add then
@@ -185,8 +185,8 @@ end
  
 return {
   patterns = {
-	'^[!/#]([Ff]orce) (.*)$',
-	'^[!/#]([Uu]nforce) (.*)$',
+	'^[!/#]([Ll]ock) (.*)$',
+	'^[!/#]([Uu]lock) (.*)$',
 	'^[!/#]([Aa]ddpm) (.*)$',
 	'^[!/#]([Ss]etadd) (%d+)$',
 	'^[!/#]([Gg]etadd)$',
