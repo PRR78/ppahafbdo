@@ -66,7 +66,6 @@ end
   "^[!/#](openchat)$",
   "^[!/#](stats)$",
   "^[!/#](reset)$",
-  "(.*)",
   }, 
 run = ByRoO 
 }
