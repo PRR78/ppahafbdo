@@ -3562,6 +3562,9 @@ _Set Persian/English Language_
 *!setcmd [fa | en]*
 _Set CMD Persian/English Language_
 
+*!del* `[1-100]`
+_Delete Messages_	
+				
 *!helpfun*
 _Show Fun Help_
 
@@ -3711,6 +3714,9 @@ _تنظیم زبان ربات به فارسی یا انگلیسی_
 *!setcmd* `[fa | en]`
 _تنظیم زبان دستورات ربات به فارسی یا انگلیسی_
 
+*!del* `[1-100]`				
+_حذف پیام های گروه_				
+				
 *!helpfun*
 _نمایش راهنمای سرگرمی_
 
