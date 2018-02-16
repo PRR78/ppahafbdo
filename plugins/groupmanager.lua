@@ -3367,7 +3367,7 @@ if ((matches[1]:lower() == "option" and not Clang) or (matches[1] == "تنظیم
 local function found_helper(TM, Beyond)
 local function inline_query_cb(TM, BD)
       if BD.results_ and BD.results_[0] then
-	       tdcli.sendInlineQueryResultMessage(msg.to.id, 0, 0, 1, BD.inline_query_id_, BD.results_[0].id_, dl_cb, nil)
+	        tdcli.sendInlineQueryResultMessage(msg.to.id, 0, 0, 1, BD.inline_query_id_, BD.results_[0].id_, dl_cb, nil)
     else
     if not lang then
     text = "*Helper is offline*\n\n"
